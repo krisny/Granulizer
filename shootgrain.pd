@@ -1,4 +1,4 @@
-#N canvas 331 167 996 537 10;
+#N canvas 117 169 996 537 10;
 #X obj 154 445 *~;
 #X obj 154 482 outlet~;
 #X obj 118 24 inlet;
@@ -40,6 +40,7 @@
 ms;
 #X text 634 219 send bang when grain ends if playback mode is active
 ;
+#X obj 463 229 del 1;
 #X connect 0 0 1 0;
 #X connect 2 0 28 0;
 #X connect 3 0 23 0;
@@ -78,8 +79,9 @@ ms;
 #X connect 28 0 20 0;
 #X connect 28 1 27 0;
 #X connect 31 0 32 0;
-#X connect 31 0 34 0;
+#X connect 31 0 39 0;
 #X connect 32 0 19 0;
 #X connect 33 0 34 1;
 #X connect 34 0 35 0;
 #X connect 35 0 36 0;
+#X connect 39 0 34 0;
