@@ -5,11 +5,11 @@
 #X obj 28 206 outlet~;
 #N canvas 11 163 695 562 graindetails 0;
 #X obj 258 341 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 140.227 256;
+-262144 -1 -1 7 256;
 #X obj 468 359 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 4.5 256;
 #X obj 99 342 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 22363 256;
+-262144 -1 -1 116555 256;
 #X obj 274 82 route range;
 #X obj 363 82 route range;
 #X obj 452 82 route range;
@@ -1422,7 +1422,7 @@ a better way to do this?;
 #X connect 15 0 13 0;
 #X connect 16 0 3 0;
 #X restore 16 286 pd triggergrain;
-#N canvas 0 23 1280 751 sendtoGUI 1;
+#N canvas 0 23 1280 751 sendtoGUI 0;
 #X msg 411 164 list /audiobuffer refresh;
 #X obj 411 138 receive RefreshBufferGUI;
 #X obj 595 127 * 0.001;
@@ -1455,8 +1455,8 @@ Bass;
 #X obj 652 563 sel 1 0;
 #X obj 683 504 receive delayToggle;
 #X msg 687 589 list /delayToggle set 0;
-#X msg 652 612 list /DancersP image delaybtn0.png;
-#X msg 629 651 list /DancersP image delaybtn1.png;
+#X msg 652 612 list /delayPanel image delaybtn0.png;
+#X msg 629 651 list /delayPanel image delaybtn1.png;
 #X connect 0 0 3 0;
 #X connect 1 0 0 0;
 #X connect 2 0 4 0;
